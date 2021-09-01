@@ -13,10 +13,16 @@
       <label for="new-task-description">Task description:</label>
       <input type="text" id="new-task-description" name="new-task-description" placeholder="description">
       <input type="submit" value="Create New Task">
+      <select id="priority">
+        <option value="0">Low</option>
+        <option value="1">Medium</option>
+        <option value="2">High</option>
+      </select>
     </form>
-
+ 
+    <button id= "sortButton">Sort To-dos</button>
     <div id="list">
-      <h2>My Todos</h2>
+      <h2>My To-do List:</h2>
       <ul id="tasks">
       </ul>
     </div>

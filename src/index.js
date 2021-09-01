@@ -1,7 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  //const form = document.getElementById("new-task-description")
+  const form = document.getElementById("create-task-form")
   const tasks = document.getElementById("tasks")
+  const sortButton = document.getElementById("sortButton")
+  
 
   function handleSubmit(e) {
     e.preventDefault()
@@ -25,10 +27,18 @@ document.addEventListener("DOMContentLoaded", () => {
     tasks.appendChild(newToDo)
     newToDo.appendChild(button)
   }
+
+  function sort() {
+    console.log("sort button clicked from sort function")
+  }
+
+
+
 // 
   // const item = document.querySelector('li')
   // item.addEventListener('click', function(){
   // item.remove()
   // })
-document.querySelector("form").addEventListener('submit', handleSubmit)
+sortButton.addEventListener('click', sort)
+form.addEventListener('submit', handleSubmit)
 });
