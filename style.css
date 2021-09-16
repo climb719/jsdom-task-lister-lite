@@ -43,3 +43,15 @@ button {
   padding-left: 10%;
   white-space: nowrap
 }
+
+.green {
+  background-color: rgb(179, 236, 179)
+}
+
+.yellow {
+  background-color: rgb(223, 223, 71)
+}
+
+.red {
+  background-color: rgb(224, 98, 98)
+}
